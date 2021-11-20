@@ -1,0 +1,115 @@
+@media (max-width: 870px) {
+    .menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #694D27;
+        height: 0;
+        z-index: 1000;
+        padding-top: 20px;
+        visibility: hidden;
+        transition: .5s;
+        overflow-y: hidden;
+    }
+
+    .menu li {
+        display: block;
+        padding: 1rem 0 1rem 0;
+        margin: 0;
+    }
+
+    .menu li:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .menu a{
+        padding: 0 2rem;
+    }
+    
+    #nav.active .menu{
+        display: block;
+        visibility: visible;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 25px;
+        color: #FFEFD9  ;
+        height: 3px ;
+    }
+    
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        position: relative;
+        transition: .5s;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+}
+@media screen and (max-width: 510px) {
+    #btn-mobile {
+        position: absolute;
+        top: 4.2rem;
+        left: 44%;
+        margin-bottom: 80px;
+        z-index: 2000;
+    }
+    #nav.active .menu{
+        display: block;
+        visibility: visible;
+        margin-top: 30px;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    header {
+        height: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    .intro_img{
+    width: 300px ;
+    height: 222px ;
+    }
+
+    
+}
