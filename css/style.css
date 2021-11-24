@@ -12,12 +12,14 @@ header {
  
     background: #694D27;
     background-attachment: fixed;
+    z-index: 10000;
 }
 
 footer {
-    height: 75px;
-   
-    background: #694D27; 
+    height: 125px;
+    background: #694D27;
+    margin-top: 0;
+    z-index: 9000; 
 }
 
 section {
@@ -26,6 +28,46 @@ section {
     width: 100%;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+div {
+    text-align: center;
+}
+
+.div_image {
+    margin: 40px 0 40px 0;
+    max-width: 70%;
+    max-height: 70%;
+    padding: 50px 5px 50px 5px;
+    border-radius: 500px;
+    background-color: #717852;
+    
+}
+
+.titulo {
+    font-weight: bolder;
+    font-size: 5rem;
+    text-align: right;
+    padding: 10% 10%;
+}
+
+.p {
+    font-size: 3rem;
+    text-align: right;
+    padding: 10% 10%;
+}
+
+.left_div {
+    width: 50%;
+    max-height: 100%;
+}
+
+.right_div {
+    width: 50%;
+    max-height: 100%;
+}
 .menu {
     position: absolute;
     top: 30px;
@@ -88,4 +130,56 @@ section {
     top: 30px;
     right: 15px;
     
+}
+
+.ap {
+    display: flex;
+}
+
+.button {
+	background-color:#717852;
+	border-radius:33px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size:25px;
+	font-weight:thin;
+	padding:18px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b4c274;
+    transition: 1s;
+}
+.button:hover {
+        background-color: #595E40;
+}
+.button:active {
+        position:relative;
+        top:1px;
+}
+
+.sobre {
+    height: 870px;
+    background: no-repeat;
+    background-position: center;
+    background-image: url(../imgs/salada.jpeg);
+    background-attachment: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: .3;
+    z-index: 1;
+    text-align: center;
+}
+
+.contato {
+    height: 870px;
+    background: no-repeat;
+    background-position: center;
+    background-image: url(../imgs/contato.jpeg);
+    background-attachment: initial;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: .3;
+    z-index: 1;
+    text-align: center;
 }
