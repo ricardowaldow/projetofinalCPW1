@@ -17,6 +17,14 @@
     .button {
         font-size: 17px;
     }
+
+    .center {
+        text-align: center;
+    }
+
+    .contato {
+        height: 700px;
+    }
 }
 
 @media (max-width: 870px) {
@@ -122,7 +130,15 @@
         margin: 0 0 0px 0;
     }
     
-    .right_div :disabled {
+    .right_div{
+        position: initial;
+        width: 100%;
+        max-height: 100%;
+        padding-top: 0px;
+        margin: 0 0 0px 0;
+    }
+
+    .desativa :disabled {
         position: initial;
         right: 0;
         width: 100%;
@@ -142,8 +158,31 @@
 
     .ap {
         display: block;
+        margin-bottom: 0px;
+        height: 500px;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .mapa {
+        padding: 50px;
+        width: 80%;
+        height: 80%;
+        border-radius: 100px;
+    }
+
+    .div_mapa {
+        height: 400px;
+    }
+
+    .contato {
+        height: 400px;
+        background-position-y: 30%;
     }
 }
+
 
 @media screen and (max-width: 510px) {
     #btn-mobile {
@@ -179,3 +218,33 @@
     }
 }
 
+@media screen and (max-width: 478px) {
+    .titulo {
+        font-weight: bolder;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    .p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 20px 0 20px;
+        margin: 0 0 50px 0;
+    }
+
+    .mapa {
+        padding: 30px;
+        width: 80%;
+        height: 80%;
+        border-radius: 100px;
+    }
+    
+    .ap {
+        height: 350px;
+    }
+
+    .sobre {
+        height: 730px;
+    }
+}
