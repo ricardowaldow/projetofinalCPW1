@@ -16,10 +16,12 @@ header {
 }
 
 footer {
-    height: 125px;
+    height: auto;
     background: #694D27;
     margin-top: 0;
     z-index: 9000; 
+    text-align: center;
+    padding: 20px
 }
 
 section {
@@ -218,4 +220,23 @@ div {
 
 .minor_padding {
     padding: 5% 5%; 
+}
+
+.icone {
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+}
+
+.icones {
+    padding: 20px 10px;
+}
+
+.redes_sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.redes {
+    padding: 0 100px;
 }
