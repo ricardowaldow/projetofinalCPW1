@@ -1,8 +1,16 @@
-@media (max-width: 1100px) {
-    section {
-        height: 700px
+@media (max-width: 1200px) {
+    .historia {
+        display: block;
+        justify-content: center;
     }
 
+    .div_sobre {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1100px) {
     .titulo {
         font-weight: bolder;
         font-size: 3.5rem;
@@ -24,6 +32,10 @@
 
     .contato {
         height: 700px;
+    }
+
+    .sobre_intro {
+        height: auto;
     }
 }
 
@@ -181,6 +193,23 @@
         height: 400px;
         background-position-y: 30%;
     }
+
+    .hist_image {
+        padding: 50px;
+        width: 80%;
+        height: 80%;
+    
+    }
+
+    .sobre_intro h2{
+        padding-top:30px;
+    }
+
+    .sobre_intro p{
+        padding-bottom:30px;
+    }
+
+
 }
 
 
@@ -216,7 +245,10 @@
     width: 300px ;
     height: 222px ;
     }
+
+
 }
+
 
 @media screen and (max-width: 478px) {
     .titulo {
@@ -227,7 +259,7 @@
     }
     
     .p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
         padding: 0 20px 0 20px;
         margin: 0 0 50px 0;
@@ -247,4 +279,12 @@
     .sobre {
         height: 730px;
     }
+
+    .hist_image {
+        padding: 30px;
+        width: 80%;
+        height: 80%;
+    
+    }
+    
 }

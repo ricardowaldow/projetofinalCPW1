@@ -17,15 +17,14 @@ header {
 
 footer {
     height: auto;
-    background: #694D27;
+    background: #563d1d;
     margin-top: 0;
     z-index: 9000; 
     text-align: center;
-    padding: 20px
+    padding: 20px;
 }
 
 section {
-    height: 1000px;
     background: #FFEFD9;
     width: 100%;
 }
@@ -66,6 +65,13 @@ div {
 
 .p {
     font-size: 3rem;
+    text-align: right;
+    padding: 10% 10%;
+    z-index: 9000;
+}
+
+.texto {
+    font-size: 1.5rem;
     text-align: right;
     padding: 10% 10%;
     z-index: 9000;
@@ -128,7 +134,7 @@ div {
 }
 
 .intro {
-    height: 870px;
+    height: 870px;  
     background: no-repeat;
     background-position: center;
     background-image: url(../imgs/intro_bg.jpg);
@@ -138,6 +144,7 @@ div {
     height: auto;
     z-index: 1;
     text-align: center;
+    
 }
 
 .intro_img {
@@ -229,7 +236,7 @@ div {
 }
 
 .icones {
-    padding: 20px 10px;
+    padding: 10px 10px 20px 10px;
 }
 
 .redes_sociais {
@@ -238,5 +245,27 @@ div {
 }
 
 .redes {
-    padding: 0 100px;
+    padding: 0;
+}
+
+.sobre_intro {
+    background: no-repeat;
+    background-position: center;
+    background-image: url(../imgs/intro_sobre_bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    padding-top: 150px;
+    height: 100vh;
+}
+
+.historia {
+    display: flex;
+}
+
+.hist_image{
+    padding: 20px 70px 0 70px;
+    width: 80%;
+    height: 70%;
+    border-radius: 200px;
 }
