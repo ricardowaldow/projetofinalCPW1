@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6,p {
     font-family: 'Montserrat', sans-serif;
 }
 
-div {
+.left_div, .right_div, .mid_div{
     text-align: center;
 }
 
@@ -269,3 +269,167 @@ div {
     height: 70%;
     border-radius: 200px;
 }
+
+            /*-------------CONTATO------------*/
+
+
+
+.formulario {
+    font-size: 25px;
+    color: white;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.form-control input {
+    height: 40px;
+    width: 60%;
+    margin: 15px; 
+    border: 2px solid rgb(133, 133, 133);
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.form-control.success input {
+    border-color: rgb(14, 155, 2);
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control .error {
+    color: red;
+    font-size: 12px;
+    height: 15px;
+}
+
+.form-control small {
+    visibility: hidden;
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.text-area {
+    height: 100px;
+    width: 60%;
+    font-size: 16px;
+    resize: none;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.titulo2 {
+    font-weight: bolder;
+    color: white;
+    font-size: 4rem;
+    padding: 7% 2%;
+    text-align: center;
+    z-index: 9000; 
+}
+
+.button-contato {
+    margin: 40px 0px 80px 0px;
+    margin-left: 18%;
+}
+
+.intro_contato {
+    height: 870px;
+    background: no-repeat;
+    background-position: center;
+    background-image: url(../imgs/intro_bg.jpg);
+    background-attachment: fixed;
+    margin: 85px 0 0 0;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+            /*-------------CONTATO------------*/
+        
+.formulario {
+    font-size: 25px;
+    color: white;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.form-control input {
+    height: 40px;
+    width: 60%;
+    margin: 15px; 
+    border: 2px solid rgb(133, 133, 133);
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.form-control.success input {
+    border-color: rgb(14, 155, 2);
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control .error {
+    color: red;
+    font-size: 12px;
+    height: 15px;
+}
+
+.form-control small {
+    visibility: hidden;
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.text-area {
+    height: 100px;
+    width: 60%;
+    font-size: 16px;
+    resize: none;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.titulo2 {
+    font-weight: bolder;
+    color: white;
+    font-size: 4rem;
+    padding: 7% 2%;
+    text-align: center;
+    z-index: 9000; 
+}
+
+.button-contato {
+    margin: 40px 0px 80px 0px;
+    margin-left: 18%;
+}
+
+.intro_contato {
+    height: 870px;
+    background: no-repeat;
+    background-position: center;
+    background-image: url(../imgs/intro_bg.jpg);
+    background-attachment: fixed;
+    margin: 85px 0 0 0;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+            
+            

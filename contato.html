@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/icone.ico">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <script src="./js/menu.js"></script>
     <title>Formaggio</title>
 
 </head>
-<body>
+<body class="body-contato">
    <header>
     <h1>
         <a href="index.html"><img src="imgs/logo.png" alt="Logo Formaggio" class=logo></a>
@@ -28,9 +31,37 @@
     </nav>
    </header>
    <script src="./js/menu.js"></script>
-   <section>
+ 
 
-   </section>   
+
+
+    <section class="intro_contato">
+        <h2 class="titulo2">Entre em Contato</h2>
+        <form  class="formulario" id="form">
+            <div class="form-control ">
+                <label for="nome">Nome:</label><br>
+                <input class="input" type="text" id="nome" name="nome" placeholder="Nome completo" required><br>
+                <small>Error message</small>
+            </div>  
+            <div class="form-control">  
+                <label for="email">Email:</label><br>
+                <input class="input" type="email" id="email" name="email" placeholder="abc@mail.com" required><br>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="fone">Telefone:</label><br>
+                <input class="input" type="number" id="fone" name="fone" placeholder="51999887766" required><br>
+                <small>Error message</small>
+            </div>  
+            <div class="form-control">  
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea class="text-area" id="mensagem" name="mensagem" rows="5" cols="58">Escreva sua mensagem...
+                </textarea><br>
+            </div>    
+                <input class="button button-contato" type="submit" value="ENVIAR ➔"><br>
+        </form>
+   </section> 
+   
    <footer>
         <div class="redes">
             <ul class="redes_sociais">
