@@ -3,6 +3,7 @@ html{
     width: 100%;
 }
 
+/*does something with the the navigation bar*/
 header {
     height: 85px;
     width:100%;
@@ -15,6 +16,7 @@ header {
     z-index: 10000;
 }
 
+/*does something with the the footer*/
 footer {
     height: auto;
     background: #563d1d;
@@ -24,15 +26,18 @@ footer {
     padding: 20px;
 }
 
+/*Changes the background color of the section*/
 section {
     background: #FFEFD9;
     width: 100%;
 }
 
+/**/
 h1,h2,h3,h4,h5,h6,p {
     font-family: 'Montserrat', sans-serif;
 }
 
+/**/
 .left_div, .right_div, .mid_div{
     text-align: center;
 }
@@ -430,6 +435,3 @@ h1,h2,h3,h4,h5,h6,p {
     height: auto;
     z-index: 1;
 }
-
-            
-            

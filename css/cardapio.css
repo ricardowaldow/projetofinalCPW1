@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    margin-top: 85px;
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.cardapio-section{
+    box-sizing: border-box
+}
+
+/* Clear floats after the columns */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*display: table;
+    content: "";
+    clear: both;
+    */
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    /*
+        max-width: 300px;
+    */
+    width: 100%;
+    box-sizing: inherit;
+    padding: 15px;
+    float: left;
+}
+
+img{
+    width: 100%;
+}
+
+/* Responsive layout*/
+@media screen and (min-width:851px) {
+    .column {
+        width: 24.99999%;
+    }
+}
