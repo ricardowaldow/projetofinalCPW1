@@ -115,7 +115,15 @@
         transform: rotate(-135deg);
         top: -7px;
     }
+    
+    .intro_cardapio {
+        padding-top: 70px;
+        min-height: 400px;
+    }
 
+    .subtitulo_cardapio {
+       font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 672px) {

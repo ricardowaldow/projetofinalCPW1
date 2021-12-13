@@ -43,30 +43,62 @@ h6 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /*display: table;
-    content: "";
-    clear: both;
-    */
+    padding-bottom: 50px;
+}
+.row {
+    padding-bottom: 50px;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
-    /*
-        max-width: 300px;
-    */
     width: 100%;
     box-sizing: inherit;
     padding: 15px;
     float: left;
 }
 
+.column h5,h4,p{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: right;
+}
+
+.column h5,h4 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.column img{
+    background: #717852;
+    padding: 5px;
+}
+
 img{
     width: 100%;
+    border-radius: 10px;
+}
+
+.intro_cardapio {
+    background: no-repeat;
+    background-position: center;
+    background-image: url(../imgs/bg_cardapio.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.subtitulo_cardapio {
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 20px;
 }
 
 /* Responsive layout*/
 @media screen and (min-width:851px) {
     .column {
         width: 24.99999%;
-    }
+    }   
 }
