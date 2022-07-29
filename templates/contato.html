@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imgs/icone.ico">
+    <link rel="icon" href="{{ url_for('static', filename='imgs/icone.ico') }}">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mobile.css') }}" />
     <title>Formaggio</title>
 
 </head>
 <body class="body-contato">
    <header>
     <h1>
-        <a href="index.html"><img src="imgs/logo.png" alt="Logo Formaggio" class=logo></a>
+        <a href="/"><img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo Formaggio" class=logo></a>
     </h1>
     <nav id="nav">
         <button aria-label="Abrir Menu" id="btn-mobile">
             <span id='hamburger'></span>
         </button>
         <ul class="menu" role="menu">
-            <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="/cardapio">Cardápio</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/sobre">Sobre</a></li>
         </ul>
     </nav>
    </header>
-   <script src="./js/menu.js"></script>
+   <script src="{{ url_for('static', filename='./js/menu.js') }}"></script>
     <section class="intro_contato">
         <h2 class="titulo2">Entre em Contato</h2>
         <form  class="formulario" id="form">
@@ -37,8 +37,8 @@
                 <label for="nome">Nome:</label><br>
                 <input class="input" type="text" id="nome" name="nome" placeholder="Nome completo" required><br>
                 <small>Error message</small>
-            </div>  
-            <div class="form-control">  
+            </div>
+            <div class="form-control">
                 <label for="email">Email:</label><br>
                 <input class="input" type="email" id="email" name="email" placeholder="abc@mail.com" required><br>
                 <small>Error message</small>
@@ -47,27 +47,26 @@
                 <label for="fone">Telefone:</label><br>
                 <input class="input" type="number" id="fone" name="fone" placeholder="51999887766" required><br>
                 <small>Error message</small>
-            </div>  
-            <div class="form-control">  
+            </div>
+            <div class="form-control">
                 <label for="mensagem">Mensagem:</label><br>
                 <textarea class="text-area" id="mensagem" name="mensagem" rows="5" cols="58">Escreva sua mensagem...
                 </textarea><br>
-            </div>    
+            </div>
                 <input class="button button-contato" type="submit" value="ENVIAR ➔"><br>
         </form>
-   </section> 
-   
+   </section>
    <footer>
         <div class="redes">
             <ul class="redes_sociais">
                 <li class="icones">
-                    <a href="#"><img class="icone" src="imgs/facebook.png"></a>
+                    <a href="#"><img class="icone" src="{{ url_for('static', filename='imgs/facebook.png') }}"></a>
                 </li>
                 <li class="icones">
-                    <a href="#"><img class="icone" src="imgs/instagram.png"></a>
+                    <a href="#"><img class="icone" src="{{ url_for('static', filename='imgs/instagram.png') }}"></a>
                 </li>
                 <li class="icones">
-                    <a href="#"><img class="icone" src="imgs/twitter.png"></a>
+                    <a href="#"><img class="icone" src="{{ url_for('static', filename='imgs/twitter.png') }}"></a>
                 </li>
             </ul>
             <p class="branco">Criado por Mateus Delatorre, Orion Maldaner e Ricardo Waldow para propósitos estudantís.</p>

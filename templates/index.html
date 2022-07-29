@@ -4,44 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imgs/icone.ico">
+    <link rel="icon" href="{{ url_for('static', filename='imgs/icone.ico') }}">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mobile.css') }}" />
     <title>Formaggio</title>
 </head>
 <body>
    <header>
     <h1>
-        <a href="index.html"><img src="imgs/logo.png" alt="Logo Formaggio" class=logo></a>
+        <a href="/"><img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo Formaggio" class=logo></a>
     </h1>
     <nav id="nav">
         <button aria-label="Abrir Menu" id="btn-mobile">
             <span id='hamburger'></span>
         </button>
         <ul class="menu" role="menu">
-            <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="/cardapio">Cardápio</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/sobre">Sobre</a></li>
         </ul>
     </nav>
    </header>
-   <script src="./js/menu.js"></script>
-   <section class="intro">  
-    <img src="imgs/intro.png" alt="Formaggio" class="intro_img">
-        
-    </section>   
+   <script src="{{ url_for('static', filename='./js/menu.js') }}"></script>
+   <section class="intro">
+    <img src="{{ url_for('static', filename='imgs/intro.png') }}" alt="Formaggio" class="intro_img">
+    </section>
     <section class="ap">
         <div class="left_div">
             <h2 class="titulo">O sabor da Itália ao seu alcance</h2>
             <p class="p">O conhecimento e sabor de gerações, expressos em pratos com o toque e tempero da cozinha italiana, que vão fazer você se sentir na própria Itália.</p>
-            <a href="cardapio.html" class="button">Conheça o Cardápio ➔</a>
+            <a href="/cardapio" class="button">Conheça o Cardápio ➔</a>
         </div>
         <div class="right_div desativa">
-            <img src="./imgs/comidas.jpeg" alt="comida italiana" class="div_image">
+            <img src="{{ url_for('static', filename='./imgs/comidas.jpeg') }}" alt="comida italiana" class="div_image">
         </div>
-        
     </section>
     <section class="sobre">
         <div class="left_div div_mapa">
@@ -50,28 +48,27 @@
         <div class="right_div">
             <h2 class="titulo branco left">Conheça mais sobre nós</h2>
             <p class="p branco">Há anos trazendo o melhor que a comida italiana tem para oferecer.</p>
-            <a href="sobre.html" class="button">Mais informações ➔</a>
+            <a href="/sobre" class="button">Mais informações ➔</a>
         </div>
     </section>
     <section class="contato">
         <div class="mid_div ">
             <h2 class="titulo branco center minor_padding">Deseja entrar em contato conosco?</h2>
             <p class="p branco center minor_padding">Nossa equipe está preparada para receber propostas e responder dúvidas.</p>
-            <a href="contato.html" class="button">Entre em contato ➔</a>
+            <a href="/contato" class="button">Entre em contato ➔</a>
         </div>
-        
     </section>
     <footer>
         <div class="redes">
             <ul class="redes_sociais">
                 <li class="icones">
-                    <a href="#"><img class="icone" src="imgs/facebook.png"></a>
+                    <a href="#"><img class="icone" src="{{ url_for('static', filename='imgs/facebook.png') }}"></a>
                 </li>
                 <li class="icones">
-                    <a href="#"><img class="icone" src="imgs/instagram.png"></a>
+                    <a href="#"><img class="icone" src="{{ url_for('static', filename='imgs/instagram.png') }}"></a>
                 </li>
                 <li class="icones">
-                    <a href="#"><img class="icone" src="imgs/twitter.png"></a>
+                    <a href="#"><img class="icone" src="{{ url_for('static', filename='/imgs/twitter.png') }}"></a>
                 </li>
             </ul>
             <p class="branco">Criado por Mateus Delatorre, Orion Maldaner e Ricardo Waldow para propósitos estudantís.</p>

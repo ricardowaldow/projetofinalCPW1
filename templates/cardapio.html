@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imgs/icone.ico">
+    <link rel="icon" href="{{ url_for('static', filename='imgs/icone.ico') }}">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
-    <link rel="stylesheet" type="text/css" href="css/cardapio.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mobile.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/cardapio.css') }}" />
     <title>Formaggio</title>
 
 </head>
 <body>
     <header>
     <h1>
-        <a href="index.html"><img src="imgs/logo.png" alt="Logo Formaggio" class=logo></a>
+        <a href="/"><img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo Formaggio" class=logo></a>
     </h1>
     <nav id="nav">
         <button aria-label="Abrir Menu" id="btn-mobile">
             <span id='hamburger'></span>
         </button>
         <ul class="menu" role="menu">
-            <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="/cardapio">Cardápio</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/sobre">Sobre</a></li>
         </ul>
     </nav>
     </header>
-    <script src="./js/menu.js"></script>
+    <script src="{{ url_for('static', filename='./js/menu.js') }}"></script>
     <section class="cardapio-section">
         <div class="intro_cardapio">
             <h1 class="titulo branco center">Conheça nosso incrível cardápio</h1>
@@ -39,25 +39,25 @@
             <h2 class="subtitulo_cardapio">Pratos Quentes e Sobremesas</h2>
             <div class="row"><!--Uma linha da tabela-->
                 <div class="column"><!--Item 1-->
-                    <img src="imgs/cardapio/bruschetta.webp">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/bruschetta.webp') }}">
                     <h4>Bruschetta</h1>
                     <h5>R$ 54,90</h5>
                     <p>A bruscheta é uma entrada ou antepasto de origem italiana que tem algumas variações e também é um curinga para um lanche ou petisco.</p>
                 </div>
                 <div class="column"><!--Item 2-->
-                    <img src="imgs/cardapio/nhoque.webp">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/nhoque.webp') }}">
                     <h4>Nhoque de Ricota com Espinafre</h4>
                     <h5>R$ 49,90</h5>
                     <p>Nhoque de ricota e espinafre é uma alternativa deliciosa aos nhoques mais tradicionais, feitos com algum tubérculo e muita farinha.</p>
                 </div>
                 <div class="column"><!--Item 3-->
-                    <img src="imgs/cardapio/lasanha-com-polpetas.webp">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/lasanha-com') }}-polpetas.webp">
                     <h4>Lasanha com Polpetas</h4>
                     <h5>R$ 42,90</h5>
                     <p>Uma receita de lasanha que além de ser deliciosa é também recheada de polpetas feitas com alcatra e linguiça.</p>
                 </div>
                 <div class="column"><!--Item 4-->   
-                    <img src="imgs/cardapio/fettuccine-com-molho-marzano.webp">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/fettuccine-com') }}-molho-marzano.webp">
                     <h4>Fettuccine com Molho Marzano</h4>
                     <h5>R$ 58,90</h5>
                     <p>O famoso Fettuccine acompanhado de um molho com as melhores especiarias.</p>
@@ -65,25 +65,25 @@
             </div>
             <div><!--Um quarto-->
                 <div class="column"><!--Item 5-->
-                    <img src="imgs/cardapio/ravioli.webp">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/ravioli.webp') }}">
                     <h4>Ravioli de Ricota e Espinafre com Molho de Açafrão</h4>
                     <h5>R$ 67,90</h5>
                     <p>Ravióli de Ricota e Espinafre é feita com massa fresca e caseira.</p>
                 </div>
                 <div class="column"><!--Item 6-->
-                    <img src="imgs/cardapio/risoto-carbonara.webp">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/risoto-carbonara') }}.webp">
                     <h4>Risoto Carbonara</h4>
                     <h5>R$ 44,90</h5>
                     <p>Tradicionalmente, o risoto com a cara da cozinha italiana. </p>
                 </div>
                 <div class="column"><!--Item 7-->
-                    <img src="imgs/cardapio/ossobuco.webp">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/ossobuco.webp') }}">
                     <h4>Ossobuco ao Forno</h4>
                     <h5>R$ 69,90</h5>
                     <p>Ossobuco assado é marinado com vinho tinto seco.</p>
                 </div>
                 <div class="column"><!--Item 8-->
-                    <img src="imgs/cardapio/tiramisu.webp">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/tiramisu.webp') }}">
                     <h4>Tiramisu</h4>
                     <h5>R$ 29,90</h5>
                     <p>O tiramissu é uma sobremesa tipicamente italiana, originária da cidade de Treviso, na região do Vêneto.</p>
@@ -94,61 +94,61 @@
             <h2 class="subtitulo_cardapio">Pizzas</h2>
             <div class="row"><!--Uma linha da tabela-->
                 <div class="column"><!--Item 1-->
-                    <img src="imgs/cardapio/calabresa.jpg">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/calabresa.jpg') }}">
                     <h4>Calabresa</h1>
                     <h5>R$ 43,90</h5>
                 </div>
                 <div class="column"><!--Item 2-->
-                    <img src="imgs/cardapio/portuguesa.jpg">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/portuguesa.jpg') }}">
                     <h4>Portuguesa</h4>
                     <h5>R$ 44,90</h5>
                 </div>
                 <div class="column"><!--Item 3-->
-                    <img src="imgs/cardapio/marguerita.jpg">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/marguerita.jpg') }}">
                     <h4>Marguerita</h4>
                     <h5>R$ 48,90</h5>
                 </div>
                 <div class="column"><!--Item 4-->   
-                    <img src="imgs/cardapio/frango_com_catupiry.jpg">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/frango_com_catupiry.jpg') }}">
                     <h4>Frango com catupiry</h4>
                     <h5>R$ 44,90</h5>
                 </div>
             </div>
             <div><!--Um quarto-->
                 <div class="column"><!--Item 5-->
-                    <img src="imgs/cardapio/mussarela.jpg">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/mussarela.jpg') }}">
                     <h4>Mussarela</h4>
                     <h5>R$ 39,90</h5>
                 </div>
                 <div class="column"><!--Item 6-->
-                    <img src="imgs/cardapio/lombo.jpg">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/lombo.jpg') }}">
                     <h4>Lombo com catupiry</h4>
                     <h5>R$ 49,90</h5>
                 </div>
                 <div class="column"><!--Item 7-->
-                    <img src="imgs/cardapio/4_queijos.jpg">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/4_queijos.jpg') }}">
                     <h4>Quatro Queijos</h4>
                     <h5>R$ 54,90</h5>
                 </div>
                 <div class="column"><!--Item 8-->
-                    <img src="imgs/cardapio/bacon.jpg">
+                    <img src="{{ url_for('static', filename='imgs/cardapio/bacon.jpg') }}">
                     <h4>Bacon</h4>
                     <h5>R$ 49,90</h5>
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
     <footer>
         <div class="redes">
             <ul class="redes_sociais">
                 <li class="icones">
-                    <a href="#"><img class="icone" src="imgs/facebook.png"></a>
+                    <a href="#"><img class="icone" src="{{ url_for('static', filename='imgs/facebook.png') }}"></a>
                 </li>
                 <li class="icones">
-                    <a href="#"><img class="icone" src="imgs/instagram.png"></a>
+                    <a href="#"><img class="icone" src="{{ url_for('static', filename='imgs/instagram.png') }}"></a>
                 </li>
                 <li class="icones">
-                    <a href="#"><img class="icone" src="imgs/twitter.png"></a>
+                    <a href="#"><img class="icone" src="{{ url_for('static', filename='imgs/twitter.png') }}"></a>
                 </li>
             </ul>
             <p class="branco center">Criado por Mateus Delatorre, Orion Maldaner e Ricardo Waldow para propósitos estudantís.</p>
